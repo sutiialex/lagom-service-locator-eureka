@@ -1,0 +1,12 @@
+play.modules.enabled += me.sutii.lagom.eureka.EurekaServiceLocatorModule
+
+lagom {
+  discovery {
+    eureka {
+      server-hostname = "eureka-registry"  # hostname of the eureka server
+      server-port     = 8761               # port of the eureka server
+      uri-scheme      = "http"             # http/https
+      instance-name   = "myservice"        # the name of the service you are registering
+    }
+  }
+}
